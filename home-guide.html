@@ -1,0 +1,479 @@
+<!DOCTYPE html> 
+<html lang="en">
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <link rel="shortcut icon" href="http://mobile.hgg6789.com/brand/mobile/img/favicon.ico">
+    <link href="style/mobile.css" rel="stylesheet">
+    <link href="style/spiner.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bet-common.js"></script>
+    <link href="style/sweetalert.css" rel="stylesheet">
+    <!-- <script type="text/javascript" src="js/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/mobile.js"></script>
+    <script type="text/javascript" src="js/app-service.js"></script>
+    <script type="text/javascript" src="js/string-polyfill.js"></script>
+    <script type="text/javascript" src="js/array-polyfill.js"></script>
+    <script src="js//moment.js"></script> -->
+    <title>HG3535</title>
+    <link href="style/main.eac67cf1.css" rel="stylesheet"></head>
+
+  <body class="noscrolling">
+    <div id="root">
+      <div data-reactroot="">
+        <div class="topmenu-container">
+          <div class="topmenu-main-menu">
+            <div class="topmenu-main-menu-logo-small" alt="Company Logo"  style="visibility:hidden;"></div>
+            <div>
+              <span class="topmenu-main-menu-item-active"></span>
+            </div>
+            <!-- react-text: 7 -->
+            <!-- /react-text -->
+            <div>
+              <div class="topmenu-main-menu-icon menu-icon-right-menu-logined" alt="Menu Icon"></div>
+            </div>
+          </div>
+          <div class="topmenu-sub-menu">
+            <div class="topmenu-sub-menu-sport">
+              <span id="subMenuSportIconText" style="color: rgb(180, 180, 180);">体育赛事</span></div>
+            <div class="topmenu-sub-menu-liveCasino-over gray">
+              <div></div>
+            </div>
+            <div class="topmenu-sub-menu-poker9 gray"></div>
+            <div id="subMenuLiveCasinoIconText" style="color: rgb(180, 180, 180);">真人荷官</div>
+            <div class="topmenu-sub-menu-casino slotGame">
+              <span id="subMenuCasinoIconText" style="color: rgb(180, 180, 180);">老虎机</span></div>
+          </div>
+        </div>
+        <div class="mobile-topmenu-place-holder"></div>
+        <div id="leftMenu" class="left-menu">
+          <div id="leftMenuBackgroundId" class="left-menu-background"></div>
+          <div class="left-menu-inside">
+            <div class="">
+              <div class="left-menu-top1">
+                <div class="left-menu-top2">
+                  <div class="left-menu-backbtn">
+                    <img src="images/btn_hamburger.png" height="12px" alt="Back Button"></div>
+                </div>
+                <div class="left-menu-top3">
+                  <div class="left-menu-closebtn">
+                    <img src="images/btn_close.png" height="13px" alt="Close Button"></div>
+                </div>
+              </div>
+            </div>
+            <a href="http://mobile.hgg6789.com/mobile/sports/home">
+              <div class="left-menu-item sport">
+                <div class="left-menu-item2">体育赛事</div>
+                <div class="left-menu-item3">
+                  <img src="images/bn_home.png" height="14px" alt="Home"></div>
+              </div>
+            </a>
+            <div>
+              <div class="left-menu-item in-play">
+                <div class="left-menu-item2">滚球盘</div>
+                <div class="left-menu-item3">
+                  <span class="left-menu-count">0</span>
+                  <div class="left-menu-inplay">&nbsp;</div></div>
+              </div>
+            </div>
+            <div class="left-menu-item" style="display: none;">
+              <div class="left-menu-item2">目前没有滚球的赛事。</div></div>
+            <div>
+              <div class="left-menu-item popular">
+                <div class="left-menu-item2">即将开赛</div>
+                <div class="left-menu-item3">
+                  <span class="left-menu-count">0</span>
+                  <div class="left-menu-soon">&nbsp;</div></div>
+              </div>
+            </div>
+            <div>
+              <div class="left-menu-item all-up">
+                <div class="left-menu-item2">复式过关</div></div>
+            </div>
+            <div class="left-menu-item" style="display: none;">
+              <div class="left-menu-item2">目前没有即将开赛的赛事。</div></div>
+            <a href="http://mobile.hgg6789.com/mobile/sports/football/select-competition/default">
+              <div class="left-menu-item football">
+                <div class="left-menu-item2">足球</div>
+                <div class="left-menu-item3">
+                  <div class="left-menu-soccer">&nbsp;</div></div>
+              </div>
+            </a>
+            <a href="http://mobile.hgg6789.com/mobile/sports/basketball/select-competition/default">
+              <div class="left-menu-item basketball">
+                <div class="left-menu-item2">篮球</div>
+                <div class="left-menu-item3">
+                  <div class="left-menu-basketball">&nbsp;</div></div>
+              </div>
+            </a>
+            <a href="http://mobile.hgg6789.com/mobile/sports/tennis/select-competition/default">
+              <div class="left-menu-item tennis">
+                <div class="left-menu-item2">网球</div>
+                <div class="left-menu-item3">
+                  <div class="left-menu-tennis">&nbsp;</div></div>
+              </div>
+            </a>
+            <a href="http://mobile.hgg6789.com/mobile/sports/baseball/select-competition/default">
+              <div class="left-menu-item baseball">
+                <div class="left-menu-item2">棒球</div>
+                <div class="left-menu-item3">
+                  <div class="left-menu-baseball">&nbsp;</div></div>
+              </div>
+            </a>
+            <a href="http://mobile.hgg6789.com/mobile/casino/live">
+              <div class="left-menu-item casino-live">
+                <div class="left-menu-item2">真人荷官</div>
+                <div class="leftmenu-btn">
+                  <img class="poker poker-k" src="images/poker_k.png" alt="">
+                  <img class="poker poker-9" src="images/poker_9.png" alt=""></div>
+              </div>
+            </a>
+            <a href="http://mobile.hgg6789.com/mobile/casino">
+              <div class="left-menu-item casino">
+                <div class="left-menu-item2">老虎机</div>
+                <div class="topmenu-sub-menu-casino" style="width: 32px; margin-top: 16px;"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div id="rightMenuBackground" class="rightMenuBackground" style="display: none;"></div>
+          <div id="rightMenu" class="right-menu" style="display: none;">
+            <div>
+              <!-- react-text: 92 -->
+              <!-- /react-text -->
+              <div class="right-menu-icon-top">
+                <div class="right-menu-icon-top-text">赢</div></div>
+            </div>
+            <div class="right-menu-top-space">
+              <div class="right-menu-top-space-arrow"></div>
+            </div>
+            <div class="right-menu-top-panel7">
+              <div class="right-menu-backbtn">
+                <div class="right-menu-backbtn-img">&nbsp;</div></div>
+              <div class="right-menu-top-panel">
+                <div>
+                  <div class="right-menu-toptext right-menu-toptext-style1">test404</div></div>
+              </div>
+              <div class="right-menu-top-deposit">存款</div></div>
+            <div class="right-menu-inside">
+              <div class="">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3 right-menu-small-text">
+                    <!-- react-text: 132 -->余额:
+                    <!-- /react-text -->
+                    <!-- react-text: 133 -->9568.78
+                    <!-- /react-text --></div>
+                  <div class="right-menu-balance-box">
+                    <div class="right-menu-balance">赢</div>
+                    <div class="right-menu-icon-refresh-frame">
+                      <div class="right-menu-icon-refresh-img">赢</div></div>
+                  </div>
+                </div>
+                <div class="right-menu-row2 right-menu-deposit-withdraw">
+                  <div class="image-container">
+                    <img src="images/btn_transfer.png" role="presentation">
+                      <a href="views/pay/withdraw.html">
+                        <img src="images/btn_withdraw.png" role="presentation" class="btn_withdraw">
+                      </a>
+                    
+
+                    </div>
+                  <div class="right-menu-row2-im9 right-menu-row2-im">&nbsp;</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">账户记录</div>
+                  <div class="right-menu-row2-im2 right-menu-row2-im">&nbsp;</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">
+                    <!-- react-text: 147 -->信息(
+                    <!-- /react-text -->
+                    <!-- react-text: 148 -->0
+                    <!-- /react-text -->
+                    <!-- react-text: 149 -->)
+                    <!-- /react-text --></div>
+                  <div class="right-menu-row2-im3 right-menu-row2-im">&nbsp;</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">我的账户</div>
+                  <div class="right-menu-row2-im4 right-menu-row2-im">&nbsp;</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">帮助</div>
+                  <div class="right-menu-row2-im5 right-menu-row2-im">&nbsp;</div></div>
+                <div class="right-menu-row2">
+                  <!-- react-text: 158 -->
+                  <!-- /react-text -->
+                  <div class="right-menu-row3">在线客服</div>
+                  <div class="right-menu-row2-im6 right-menu-row2-im">&nbsp;</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">退出</div>
+                  <div class="right-menu-row2-im8 right-menu-row2-im">&nbsp;</div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">投注记录</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">交易记录</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">摘要</div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">体育</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">老虎机</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">真人荷官</div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">存款</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">提款</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">额度转换</div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3 app-history-button">已结算注单</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">未结算注单</div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3 app-inbox-button">发送新信息</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3 app-inbox-button">
+                    <!-- react-text: 188 -->收件箱(
+                    <!-- /react-text -->
+                    <!-- react-text: 189 -->0
+                    <!-- /react-text -->
+                    <!-- react-text: 190 -->)
+                    <!-- /react-text --></div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3 app-inbox-button">
+                    <!-- react-text: 193 -->发件箱(
+                    <!-- /react-text -->
+                    <!-- react-text: 194 -->0
+                    <!-- /react-text -->
+                    <!-- react-text: 195 -->)
+                    <!-- /react-text --></div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">
+                    <!-- react-text: 198 -->通知(
+                    <!-- /react-text -->
+                    <!-- react-text: 199 -->0
+                    <!-- /react-text -->
+                    <!-- react-text: 200 -->)
+                    <!-- /react-text --></div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">
+                    <!-- react-text: 203 -->公告(
+                    <!-- /react-text -->
+                    <!-- react-text: 204 -->0
+                    <!-- /react-text -->
+                    <!-- react-text: 205 -->)
+                    <!-- /react-text --></div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">个人档案</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">资料验证</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">博彩责任</div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">常见问题</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">游戏规则</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">游戏玩法</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3 app-contact-button">联系我们</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <!-- react-text: 121 -->
+          <!-- /react-text -->
+          <link href="style/content.css" rel="stylesheet">
+          <link href="style/font-awesome.min.css" rel="stylesheet">
+          <link href="style/common.css" rel="stylesheet">
+          <div>
+            <div class="content">
+              <div class="content-button-group">
+                <div class="content-button" onclick="directTo(&#39;main-guide.html&#39;)">
+                  <img src="images/btn_sport.jpg">
+                  <div>体育赛事</div></div>
+                <div class="content-button">
+                  <img src="images/btn_live.jpg" onclick="directTo(&#39;main-guide.html&#39;)">
+                  <div>真人荷官</div></div>
+                <div class="content-button">
+                  <img src="images/btn_casino.jpg" onclick="directTo(&#39;main-guide.html&#39;)">
+                  <div>老虎机</div></div>
+                <div class="content-button nav-cp">
+                  <img src="images/btn_lottery.jpg" onclick="alert(&#39;即将推出，敬请留意&#39;)">
+                  <div>彩票</div></div>
+                <div class="content-button nav-promo">
+                  <img src="images/btn_promotion.jpg" onclick="directTo(&#39;main-guide.html&#39;)">
+                  <div>优惠</div></div>
+                <div class="content-button nav-download">
+                  <img src="images/btn_apps.jpg" onclick="alert(&#39;即将推出，敬请留意&#39;)">
+                  <div>APP下载</div></div>
+              </div>
+              <span class="promotion-title">优惠</span>
+              <div class="promotion">
+                <div onclick="switchContent(&#39;jetso1&#39;)">
+                  <img src="images/promotion1.jpg">
+                  <div class="promotion-desc">新会员首次存款免费送30%</div></div>
+                <div onclick="switchContent(&#39;jetso2&#39;)">
+                  <img src="images/promotion2.jpg">
+                  <div class="promotion-desc">会员二次存款免费送15%</div></div>
+                <div onclick="switchContent(&#39;jetso3&#39;)">
+                  <img src="images/promotion3.jpg">
+                  <div class="promotion-desc">体育达人 连赢送大礼送88888元</div></div>
+                <div onclick="switchContent(&#39;jetso4&#39;)">
+                  <img src="images/promotion4.jpg">
+                  <div class="promotion-desc">体育投注周周返点高达1.0%，无上限</div></div>
+                <div onclick="switchContent(&#39;jetso5&#39;)">
+                  <img src="images/promotion5.jpg">
+                  <div class="promotion-desc">视讯投注周周返点高达0.8%，无上限</div></div>
+              </div>
+              <div class="banner">
+                <img src="images/banner.jpg"></div>
+              <div class="popup-wrapper">
+                <div class="popup">
+                  <div class="icon">
+                    <img src="images/popup_icon.png"></div>
+                  <div class="text" id="popupMessage"></div>
+                  <div class="buttons">
+                    <span class="confirm" onclick="closePopup()">确 定</span></div>
+                </div>
+              </div>
+              <!-- <script src="js/content.js"></script> -->
+            </div>
+            <!-- <script src="js/content.js" async=""></script> -->
+            <script async="">window.location.hash !== '' ? window.switchContent(window.location.hash.replace('#', '')) : window.replaceMainContent();
+
+              function directTo(target) {
+                window.location.href = target;
+              }
+
+              function replaceMainContent() {
+                window.showLoading();
+                window.location.hash = '';
+                window.scrollTo(0, 0);
+                return $.get('/brand/mobile/main/content.html').then(function(res) {
+                  $('.content').replaceWith(res);
+                  window.hideLoading();
+                });
+              }
+
+              function replaceWebTitle(content) {
+                return content.replace(/{{brand_name}}/g, 'HG3535');
+              }
+
+              function switchContent(page) {
+                window.showLoading();
+                window.scrollTo(0, 0);
+                $.get('/brand/mobile/' + page + '.html').then(function(res) {
+                  $('.content').html(replaceWebTitle(res));
+                  if (window.location.hash.replace('#', '') !== page) {
+                    window.location.hash = page;
+                  }
+                  window.hideLoading();
+                });
+              }
+
+              window.onhashchange = function() {
+                window.location.hash !== '' ? window.switchContent(window.location.hash.replace('#', '')) : window.replaceMainContent();
+              }
+
+              function showLoading() {
+                /*document.getElementById("loading").style.display = "block";
+                if (typeof android !== 'undefined') {
+                  _AccountService.onoff();
+                  android.showLoading('start');
+                }
+                if (isiosBridgeExist) {
+                  window.webkit.messageHandlers.bridge.postMessage('startload')
+                }*/
+              }
+
+              function hideLoading() {
+                setTimeout(function() {
+                  document.getElementById("loading").style.display = "none";
+                  if (typeof android !== 'undefined') {
+                    android.hideLoading('end');
+                  }
+                  if (isiosBridgeExist) {
+                    window.webkit.messageHandlers.bridge.postMessage('startload')
+                  }
+                },
+                640);
+              }</script>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>
+            <style>.payment-method { display: flex; justify-content: center; padding: 20px 0; } .payment-method>img { height: 25px; margin: 0 5px; } .footer-top { background: #363636; padding: 20px 5px; text-align: left; } .footer-top>div { padding: 0 3px; } .footer-container { display: flex; flex-wrap: wrap; } .footer-container > div { flex: 1 50%; } .footer-content-title { font-size: 12px; font-weight: 500; color: #b4b4b4; margin: 11px 0; } .footer-link-group>div { padding: 0 3px; } .footer-link-group>div:active { color: #9b9b9b; } .footer-link-group, .footer-link-help-group { font-size: 14px; line-height: 24px; color: #6e6e6e; } .footer-container>.footer-copyright-text { text-align: center; margin: 20px; } @media screen and (min-width: 737px) { .payment-method > img { height: 35px; margin: 0 15px; } .footer-content-title { font-size: 13px; line-height: 1.1; } .footer-link-group img { height: 22px; } .footer-link-group, .footer-link-help-group { font-size: 13px; line-height: 22px; } .footer-container>.footer-copyright-text { font-size: 13px; } } @media screen and (min-width: 1000px) { .footer-container { margin: auto; } }</style>
+            <div>
+              <div class="footer-top">
+                <div class="footer-container">
+                  <div>
+                    <div class="footer-content-title">其它相关链接</div>
+                    <div class="footer-link-group">
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#about_us">关于我们</a></div>
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#sitemap">网站导览</a></div>
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#responsible_gaming">博彩责任</a></div>
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#terms_conditions">规则与条款</a></div>
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#privacy_policy">隐私权政策</a></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="footer-content-title">是否需要帮助？</div>
+                    <div class="footer-link-help-group">
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#qa">常见问题</a></div>
+                      <!--<div>在线客服</div>-->
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#contact_us">联系我们</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="padding-top:20px;display: flex; align-items: center; justify-content: center;">
+                <!-- <div style="width: 116px; line-height: 40px; background-color: #84b752; border-color: #77a946; color: #fff; border-radius: 4px; font-size: 15px; cursor: pointer;" onclick="window.location='http://desktop.hgg6789.com';">切换至电脑版</div>--></div>
+              <div class="footer-container">
+                <div class="payment-method">
+                  <img src="images/unionpay.png">
+                  <img src="images/alipay.png">
+                  <img src="images/qq.png">
+                  <img src="images/wepay.png"></div>
+                <div class="footer-copyright-text">HG3535属于HG3535有限公司注册。
+                  <br>版权所有 © 2017
+                  <!--<br> 注册日期17/02/2017(最后更新20/02/2017)  --></div></div>
+            </div>
+          </div>
+        </div>
+        <!-- react-empty: 128 --></div>
+    </div>
+    <div id="loading" class="loading-container" style="display: none;">
+      <div class="loading-figure"></div>
+    </div> 
+  </body>
+
+</html>
+
+<!-- 引导资源   -->
+<link href="js/enjoyhint/enjoyhint.css" rel="stylesheet">
+<script src="js/enjoyhint/enjoyhint.min.js"></script>
+<script src="js/enjoyhint/hint-sequence-home-guide.js"></script>
+ 

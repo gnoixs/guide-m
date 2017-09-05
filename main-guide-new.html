@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main-Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            overflow: hidden;
+        }
+        header {
+            width: 100%;
+            height: 100px;
+            background: red;
+            background: #373737;
+            color: #b4b4b4;
+            font-size: 13px;
+        }
+
+        section {
+            width: 100%;
+            background: #d7d7d7;
+            overflow: auto;
+        }
+
+        .top {
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #ff9200;
+        }
+
+        .top * {
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        .top h1 {
+            width: 78px;
+            height: 50px;
+            background: url(images/logo.png) no-repeat center center;
+            text-indent: -9999px;
+            background-size: contain;
+        }
+
+        .top .more {
+            width: 70px;
+            height: 18px;
+            color: white;
+        }
+
+        .top .more span {
+            display: inline-block;
+            border-style: solid;
+            border-width: 2px 2px 0 0;
+            content: "";
+            width: 6px;
+            height: 6px;
+            position: relative;
+            top: -2px;
+            left: 6px;
+            -webkit-transform: rotate(135deg);
+            -ms-transform: rotate(135deg);
+            transform: rotate(135deg);
+        }
+
+        .top .bet {
+            width: 88px;
+            height: 24px;
+            float: right;
+            position: relative;
+            top: 15px;
+            right: 12px;
+            font-size: 15px;
+        }
+
+        .top .bet span {
+            width: 24px;
+            height: 24px;
+            background: #ff9300;
+            border-radius: 50%;
+            font-size: 13px;
+            line-height: 24px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .top .avator {
+            width: 37px;
+            height: 37px;
+            background: url(images/icon_login.png) no-repeat center center;
+            background-size: contain;
+            text-indent: -9999px;
+            float: right;
+            position: relative;
+            top: 6px;
+            right: 6px;
+        }
+
+        .under * {
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        .under .menu {
+            width: 18px;
+            height: 18px;
+            background: url(images/btn_hamburger.png) no-repeat center center;
+            background-size: contain;
+            position: relative;
+            left: 16px;
+            top: 16px;
+        }
+
+        .under .home {
+            width: 18px;
+            height: 18px;
+            background: url(images/icon_home.png) no-repeat center center;
+            background-size: contain;
+            position: relative;
+            top: 14px;
+            left: 22px;
+        }
+        .under ul {
+            float: right;
+            position: relative;
+            top: 16px;
+            right: 16px;
+        }
+        .under ul li {
+            margin-left: 2px;
+        }
+        .under ul li a {
+            color: #b4b4b4;
+            text-decoration: none;
+        }
+
+        .topbar{
+            width:100%;
+            height: 60px;
+            background: white;
+        }
+        .topbar ul {
+            text-align: center;
+        }
+        .topbar ul li {
+            display: inline-block;
+            width:49px;
+            height: 43px;
+            font-size: 12px;
+            color: #7d7d7d;
+        }
+        .topbar ul li span{
+            display: inline-block;
+            width: 36px;
+            height: 30px;
+            margin-top: 6px;
+            background: url(images/icon_soccer.png) no-repeat center center;
+            background-size: contain;
+        }
+        .center {
+            width: 98%;
+            margin: 6px auto;
+            height: auto;
+            border-radius: 5px;
+            background: white;
+            box-sizing: border-box;
+            padding: 5px 10px;
+        }
+        .center .playTitle {
+            height: 48px;
+            font-weight: 600;
+            color: #ff9227;
+            background-color: #4b4b4b;
+            border-radius: 3px;
+            border: 1px solid #4b4b4b;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            line-height: 48px;
+            text-indent: 5px;
+        }
+
+        .center .playTitle span{
+            display: inline-block;
+            float: right;
+            width: 28px;
+            height: 28px;
+            color: white;
+            background: #ff9227;
+            line-height: 28px;
+            border-radius: 50%;
+            position: relative;
+            right: 5px;
+            top:10px;
+        }
+        .center h2{
+            margin-top: 10px;
+            margin-left: 10px;
+            color: #cb4700;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        .center .list li{
+            border-bottom: 1px solid #ebebeb;
+            height: 55px;
+            box-sizing: border-box;
+            display: inline-block;
+            width: 100%;
+        }
+        .center .list li div{
+            display: inline-block;
+        }
+        .center .list li .lf{
+            width: 30px;
+            height: 60px;
+            color: #cb4700;
+        }
+        .center .list li .lf span{
+            display: inline-block;
+            width: 30px;
+            text-align: center;
+            line-height: 25px;
+        }
+        .center .list li .ct {
+            width: 150px;
+            height: 60px;
+        }
+        .center .list li .ct span{
+            display: inline-block;
+            width: 150px;
+            line-height: 26px;
+            text-indent: 20px;
+            font-size: 14px;
+        }
+        .center .list li .rt{
+            width: 75px;
+            height: 60px;
+            float: right;
+        }
+        .center .list li .rt span{
+            display: inline-block;
+            width: 75px;
+            line-height: 26px;
+            color: #939393;
+            font-size: 13px;
+        }
+        .center .list li .rt i {
+            border-style: solid;
+            border-width: 1px 1px 0 0;
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            position: relative;
+            right: -55px;
+            top: -40px;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            vertical-align: middle;
+        }
+        .foot{
+            width: 100%;
+            height: 10px;
+            background: #202020;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="top">
+            <h1>logo</h1>
+            <div class="more">更多游戏<span></span></div>
+            <div class="avator">avator</div>
+            <div class="bet">投注记录<span>1</span></div>
+
+        </div>
+
+        <div class="under">
+            <h6 class="menu"></h6>
+            <h6 class="home"></h6>
+            <ul>
+                <li><a href="#">滚球盘</a></li>
+                <li><a href="#">即将开赛</a></li>
+                <li><a href="#">今日赛事</a></li>
+                <li><a href="#">复试过关</a></li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="topbar">
+            <ul>
+                <li><span style="background-image:url(images/icon_soccer.png)"></span><br/> 足球</li>
+                <li><span style="background-image:url(images/icon_basketball.png)"></span><br/>篮球</li>
+                <li><span style="background-image:url(images/icon_tennis.png)"></span><br/>网球</li>
+                <li><span style="background-image:url(images/icon_baseball.png)"></span><br/>棒球</li>
+                <li><span style="background-image:url(images/poker_k.png)"></span><br/>真人荷官</li>
+                <li><span style="background-image:url(images/casino_off_btn_V2.png)"></span><br/>老虎机</li>
+            </ul>
+        </div>
+
+        <div class="center">
+            <div class="playTitle">
+                滚球盘<span>13</span>
+            </div>
+            <h2>足球</h2>
+            <ul class="list">
+                <li>
+                    <div class="lf">
+                        <span>0</span>
+                        <span>1</span>
+                    </div>
+                    <div class="ct">
+                        <span>大田地铁</span>
+                        <span>金海</span>
+                    </div>
+                    <div class="rt">
+                        <span>下半场</span>
+                        <span>48:31</span>
+                        <i></i>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="lf">
+                        <span>0</span>
+                        <span>1</span>
+                    </div>
+                    <div class="ct">
+                        <span>大田地铁</span>
+                        <span>金海</span>
+                    </div>
+                    <div class="rt">
+                        <span>下半场</span>
+                        <span>48:31</span>
+                        <i></i>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="lf">
+                        <span>0</span>
+                        <span>1</span>
+                    </div>
+                    <div class="ct">
+                        <span>大田地铁</span>
+                        <span>金海</span>
+                    </div>
+                    <div class="rt">
+                        <span>下半场</span>
+                        <span>48:31</span>
+                        <i></i>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="lf">
+                        <span>0</span>
+                        <span>1</span>
+                    </div>
+                    <div class="ct">
+                        <span>大田地铁</span>
+                        <span>金海</span>
+                    </div>
+                    <div class="rt">
+                        <span>下半场</span>
+                        <span>48:31</span>
+                        <i></i>
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- more -->
+            <div class="playTitle">
+                滚球盘<span>13</span>
+            </div>
+            <h2>足球</h2>
+            <ul class="list">
+                <li>
+                    <div class="lf">
+                        <span>0</span>
+                        <span>1</span>
+                    </div>
+                    <div class="ct">
+                        <span>大田地铁</span>
+                        <span>金海</span>
+                    </div>
+                    <div class="rt">
+                        <span>下半场</span>
+                        <span>48:31</span>
+                        <i></i>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="lf">
+                        <span>0</span>
+                        <span>1</span>
+                    </div>
+                    <div class="ct">
+                        <span>大田地铁</span>
+                        <span>金海</span>
+                    </div>
+                    <div class="rt">
+                        <span>下半场</span>
+                        <span>48:31</span>
+                        <i></i>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="lf">
+                        <span>0</span>
+                        <span>1</span>
+                    </div>
+                    <div class="ct">
+                        <span>大田地铁</span>
+                        <span>金海</span>
+                    </div>
+                    <div class="rt">
+                        <span>下半场</span>
+                        <span>48:31</span>
+                        <i></i>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="lf">
+                        <span>0</span>
+                        <span>1</span>
+                    </div>
+                    <div class="ct">
+                        <span>大田地铁</span>
+                        <span>金海</span>
+                    </div>
+                    <div class="rt">
+                        <span>下半场</span>
+                        <span>48:31</span>
+                        <i></i>
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="playTitle">
+                滚球盘<span>13</span>
+            </div>
+            <h2>足球</h2>
+            <ul class="list">
+                <li>
+                    <div class="lf">
+                        <span>0</span>
+                        <span>1</span>
+                    </div>
+                    <div class="ct">
+                        <span>大田地铁</span>
+                        <span>金海</span>
+                    </div>
+                    <div class="rt">
+                        <span>下半场</span>
+                        <span>48:31</span>
+                        <i></i>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="lf">
+                        <span>0</span>
+                        <span>1</span>
+                    </div>
+                    <div class="ct">
+                        <span>大田地铁</span>
+                        <span>金海</span>
+                    </div>
+                    <div class="rt">
+                        <span>下半场</span>
+                        <span>48:31</span>
+                        <i></i>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="lf">
+                        <span>0</span>
+                        <span>1</span>
+                    </div>
+                    <div class="ct">
+                        <span>大田地铁</span>
+                        <span>金海</span>
+                    </div>
+                    <div class="rt">
+                        <span>下半场</span>
+                        <span>48:31</span>
+                        <i></i>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="lf">
+                        <span>0</span>
+                        <span>1</span>
+                    </div>
+                    <div class="ct">
+                        <span>大田地铁</span>
+                        <span>金海</span>
+                    </div>
+                    <div class="rt">
+                        <span>下半场</span>
+                        <span>48:31</span>
+                        <i></i>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="foot">
+
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('section').height(window.innerHeight - 100 + 'px');
+    })
+
+</script>
+
+</body>
+</html>

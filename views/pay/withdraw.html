@@ -1,0 +1,492 @@
+<!DOCTYPE html> 
+<html lang="en">
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+    <link rel="shortcut icon" href="http://mobile.hgg6789.com/brand/mobile/img/favicon.ico">
+    <link href="../../style/mobile.css" rel="stylesheet">
+    <link href="../../style/spiner.css" rel="stylesheet">
+    <script type="text/javascript" src="../../js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="../../js/bet-common.js"></script>
+    <link href="../../style/sweetalert.css" rel="stylesheet">
+    <!-- <script type="text/javascript" src="../../jssweetalert.min.js"></script>
+    <script type="text/javascript" src="../../jsmobile.js"></script>
+    <script type="text/javascript" src="../../jsapp-service.js"></script>
+    <script type="text/javascript" src="../../jsstring-polyfill.js"></script>
+    <script type="text/javascript" src="../../jsarray-polyfill.js"></script>
+    <script src="./HG3535_files/moment.js"></script> -->
+    <title>HG3535</title>
+    <link href="../../style/main.eac67cf1.css" rel="stylesheet">
+
+    <style type="text/css">
+      .nextStep-w {
+          background: #404040;
+          border: 1px solid #404040; 
+          font-size: 14px;
+          -webkit-appearance: none;
+          padding: 10px 0;
+          border: 0;
+          border-radius: 4px;
+          width: 49%;
+          color: #fff;
+          margin: 16px 0;
+          cursor: pointer;
+    text-align: center;
+      }
+    </style>
+    </head>
+  
+  <body>
+    <div id="root">
+      <div data-reactroot="">
+        <div class="topmenu-container">
+          <div class="topmenu-main-menu finish">
+            <div class="topmenu-main-menu-logo-small" alt="Company Logo"  style="visibility:hidden;"></div>
+            <div></div>
+            <!-- react-text: 6 -->
+            <!-- /react-text -->
+            <div>
+              <div class="topmenu-main-menu-icon menu-icon-right-menu-logined" alt="Menu Icon"></div>
+            </div>
+          </div>
+          <div class="topmenu-sub-menu">
+            <div class="topmenu-sub-menu-sport">
+              <span id="subMenuSportIconText" style="color: rgb(180, 180, 180);">体育赛事</span></div>
+            <div class="topmenu-sub-menu-liveCasino-over gray">
+              <div></div>
+            </div>
+            <div class="topmenu-sub-menu-poker9 gray"></div>
+            <div id="subMenuLiveCasinoIconText" style="color: rgb(180, 180, 180);">真人荷官</div>
+            <div class="topmenu-sub-menu-casino">
+              <span id="subMenuCasinoIconText" style="color: rgb(180, 180, 180);">老虎机</span></div>
+          </div>
+        </div>
+        <div class="mobile-topmenu-place-holder"></div>
+        <div id="leftMenu" class="left-menu">
+          <div id="leftMenuBackgroundId" class="left-menu-background"></div>
+          <div class="left-menu-inside">
+            <div class="">
+              <div class="left-menu-top1">
+                <div class="left-menu-top2">
+                  <div class="left-menu-backbtn">
+                    <img src="../../images/btn_hamburger.png" height="12px" alt="Back Button"></div>
+                </div>
+                <div class="left-menu-top3">
+                  <div class="left-menu-closebtn">
+                    <img src="../../images/btn_close.png" height="13px" alt="Close Button"></div>
+                </div>
+              </div>
+            </div>
+            <a href="http://mobile.hgg6789.com/mobile/sports/home">
+              <div class="left-menu-item sport">
+                <div class="left-menu-item2">体育赛事</div>
+                <div class="left-menu-item3">
+                  <img src="../../images/bn_home.png" height="14px" alt="Home"></div>
+              </div>
+            </a>
+            <div>
+              <div class="left-menu-item in-play">
+                <div class="left-menu-item2">滚球盘</div>
+                <div class="left-menu-item3">
+                  <span class="left-menu-count">0</span>
+                  <div class="left-menu-inplay">&nbsp;</div></div>
+              </div>
+            </div>
+            <div class="left-menu-item" style="display: none;">
+              <div class="left-menu-item2">目前没有滚球的赛事。</div></div>
+            <div>
+              <div class="left-menu-item popular">
+                <div class="left-menu-item2">即将开赛</div>
+                <div class="left-menu-item3">
+                  <span class="left-menu-count">0</span>
+                  <div class="left-menu-soon">&nbsp;</div></div>
+              </div>
+            </div>
+            <div>
+              <div class="left-menu-item all-up">
+                <div class="left-menu-item2">复式过关</div></div>
+            </div>
+            <div class="left-menu-item" style="display: none;">
+              <div class="left-menu-item2">目前没有即将开赛的赛事。</div></div>
+            <a href="http://mobile.hgg6789.com/mobile/sports/football/select-competition/default">
+              <div class="left-menu-item football">
+                <div class="left-menu-item2">足球</div>
+                <div class="left-menu-item3">
+                  <div class="left-menu-soccer">&nbsp;</div></div>
+              </div>
+            </a>
+            <a href="http://mobile.hgg6789.com/mobile/sports/basketball/select-competition/default">
+              <div class="left-menu-item basketball">
+                <div class="left-menu-item2">篮球</div>
+                <div class="left-menu-item3">
+                  <div class="left-menu-basketball">&nbsp;</div></div>
+              </div>
+            </a>
+            <a href="http://mobile.hgg6789.com/mobile/sports/tennis/select-competition/default">
+              <div class="left-menu-item tennis">
+                <div class="left-menu-item2">网球</div>
+                <div class="left-menu-item3">
+                  <div class="left-menu-tennis">&nbsp;</div></div>
+              </div>
+            </a>
+            <a href="http://mobile.hgg6789.com/mobile/sports/baseball/select-competition/default">
+              <div class="left-menu-item baseball">
+                <div class="left-menu-item2">棒球</div>
+                <div class="left-menu-item3">
+                  <div class="left-menu-baseball">&nbsp;</div></div>
+              </div>
+            </a>
+            <a href="http://mobile.hgg6789.com/mobile/casino/live">
+              <div class="left-menu-item casino-live">
+                <div class="left-menu-item2">真人荷官</div>
+                <div class="leftmenu-btn">
+                  <img class="poker poker-k" src="./HG3535_files/poker_k.png" alt="">
+                  <img class="poker poker-9" src="./HG3535_files/poker_9.png" alt=""></div>
+              </div>
+            </a>
+            <a href="http://mobile.hgg6789.com/mobile/casino">
+              <div class="left-menu-item casino">
+                <div class="left-menu-item2">老虎机</div>
+                <div class="topmenu-sub-menu-casino" style="width: 32px; margin-top: 16px;"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div id="rightMenuBackground" class="rightMenuBackground"></div>
+          <div id="rightMenu" class="right-menu">
+            <div>
+              <!-- react-text: 91 -->
+              <!-- /react-text -->
+              <div class="right-menu-icon-top">
+                <div class="right-menu-icon-top-text">赢</div></div>
+            </div>
+            <div class="right-menu-top-space">
+              <div class="right-menu-top-space-arrow"></div>
+            </div>
+            <div class="right-menu-top-panel7">
+              <div class="right-menu-backbtn">
+                <div class="right-menu-backbtn-img">&nbsp;</div></div>
+              <div class="right-menu-top-panel">
+                <div>
+                  <div class="right-menu-toptext right-menu-toptext-style1">test404</div></div>
+              </div>
+              <div class="right-menu-top-deposit">存款</div></div>
+            <div class="right-menu-inside">
+              <div class="">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3 right-menu-small-text">
+                    <!-- react-text: 229 -->余额:
+                    <!-- /react-text -->
+                    <!-- react-text: 230 -->9568.78
+                    <!-- /react-text --></div>
+                  <div class="right-menu-balance-box">
+                    <div class="right-menu-balance">赢</div>
+                    <div class="right-menu-icon-refresh-frame">
+                      <div class="right-menu-icon-refresh-img">赢</div></div>
+                  </div>
+                </div>
+                <div class="right-menu-row2 right-menu-deposit-withdraw">
+                  <div class="image-container">
+                    <img src="../../images/btn_transfer.png" role="presentation">
+                    <img src="../../images/btn_withdraw.png" role="presentation"></div>
+                  <div class="right-menu-row2-im9 right-menu-row2-im">&nbsp;</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">账户记录</div>
+                  <div class="right-menu-row2-im2 right-menu-row2-im">&nbsp;</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">
+                    <!-- react-text: 244 -->信息(
+                    <!-- /react-text -->
+                    <!-- react-text: 245 -->0
+                    <!-- /react-text -->
+                    <!-- react-text: 246 -->)
+                    <!-- /react-text --></div>
+                  <div class="right-menu-row2-im3 right-menu-row2-im">&nbsp;</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">我的账户</div>
+                  <div class="right-menu-row2-im4 right-menu-row2-im">&nbsp;</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">帮助</div>
+                  <div class="right-menu-row2-im5 right-menu-row2-im">&nbsp;</div></div>
+                <div class="right-menu-row2">
+                  <!-- react-text: 255 -->
+                  <!-- /react-text -->
+                  <div class="right-menu-row3">在线客服</div>
+                  <div class="right-menu-row2-im6 right-menu-row2-im">&nbsp;</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">退出</div>
+                  <div class="right-menu-row2-im8 right-menu-row2-im">&nbsp;</div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">投注记录</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">交易记录</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">摘要</div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">体育</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">老虎机</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">真人荷官</div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">存款</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">提款</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">额度转换</div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3 app-history-button">已结算注单</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">未结算注单</div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3 app-inbox-button">发送新信息</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3 app-inbox-button">
+                    <!-- react-text: 285 -->收件箱(
+                    <!-- /react-text -->
+                    <!-- react-text: 286 -->0
+                    <!-- /react-text -->
+                    <!-- react-text: 287 -->)
+                    <!-- /react-text --></div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3 app-inbox-button">
+                    <!-- react-text: 290 -->发件箱(
+                    <!-- /react-text -->
+                    <!-- react-text: 291 -->0
+                    <!-- /react-text -->
+                    <!-- react-text: 292 -->)
+                    <!-- /react-text --></div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">
+                    <!-- react-text: 295 -->通知(
+                    <!-- /react-text -->
+                    <!-- react-text: 296 -->0
+                    <!-- /react-text -->
+                    <!-- react-text: 297 -->)
+                    <!-- /react-text --></div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">
+                    <!-- react-text: 300 -->公告(
+                    <!-- /react-text -->
+                    <!-- react-text: 301 -->0
+                    <!-- /react-text -->
+                    <!-- react-text: 302 -->)
+                    <!-- /react-text --></div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">个人档案</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">资料验证</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">博彩责任</div></div>
+              </div>
+              <div class="right-menu-hidden">
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">常见问题</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">游戏规则</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3">游戏玩法</div></div>
+                <div class="right-menu-row2">
+                  <div class="right-menu-row3 app-contact-button">联系我们</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="withdraw-container">
+          <div class="withdraw-main-title">提款</div>
+          <div class="withdraw-steps">
+            <div class="withdraw-steps-true">
+              <span>1</span>
+              <div>申请提款</div></div>
+            <div>
+              <span>2</span>
+              <div>确认申请</div></div>
+            <div>
+              <span>3</span>
+              <div>提交完成</div></div>
+          </div>
+          <form class="withdraw-form">
+            <div class="form-group input-style1 ">
+              <div class="w-p-100" for="username">
+                <!-- react-text: 134 -->账户名:
+                <!-- /react-text --></div>
+              <div style="line-height: 42px; height: 42px;">
+                <input type="text" class="input-style2 w-p-100" name="username" value="test404" maxlength="50" disabled="">
+                <div class="f-l" style="display: none;"></div>
+              </div>
+              <span class="input-errorMsg"></span>
+            </div>
+            <div class="form-group ">
+              <label for="currency">
+                <!-- react-text: 141 -->货币:
+                <!-- /react-text --></label>
+              <div>
+                <select class="input-style2 w-p-100" name="currency" disabled="" style="-webkit-appearance: none; background: rgb(255, 255, 255);">
+                  <option value="RMB">人民币</option></select>
+                <span class="input-errorMsg"></span>
+              </div>
+            </div>
+            <div class="form-group input-style1 required">
+              <div class="w-p-100" for="playerBankAccount">
+                <b style="color: red;">*</b>
+                <!-- react-text: 149 -->银行卡卡号:
+                <!-- /react-text --></div>
+              <div style="line-height: 42px; height: 42px;">
+                <input type="tel" class="input-style2 w-p-100" name="playerBankAccount" id="playerBankAccount" value="" maxlength="20" placeholder="请输入银行卡卡号">
+                <div class="f-l" style="display: none;">
+                  <b style="color: red;">*</b></div>
+              </div>
+              <span class="input-errorMsg"></span>
+            </div>
+            <!-- react-text: 155 -->
+            <!-- /react-text -->
+            <div class="form-group required">
+              <label for="playerBankName">
+                <b style="color: red;">*</b>
+                <!-- react-text: 159 -->银行名称:
+                <!-- /react-text --></label>
+              <div>
+                <select class="input-style2 w-p-100" name="playerBankName" id="playerBankName" style="-webkit-appearance: none; background: rgb(255, 255, 255);">
+                  <option value="" disabled="">请选择银行</option>
+                  <option value="中国银行">中国银行</option>
+                  <option value="中国工商银行">中国工商银行</option>
+                  <option value="招商银行">招商银行</option>
+                  <option value="中国建设银行">中国建设银行</option>
+                  <option value="中国民生银行">中国民生银行</option>
+                  <option value="东亚银行">东亚银行</option>
+                  <option value="中信银行">中信银行</option>
+                  <option value="中国平安银行">中国平安银行</option>
+                  <option value="中国光大银行">中国光大银行</option>
+                  <option value="中国广发银行">中国广发银行</option>
+                  <option value="北京银行">北京银行</option>
+                  <option value="北京农商银行">北京农商银行</option>
+                  <option value="中国邮政银行">中国邮政银行</option>
+                  <option value="南京银行">南京银行</option>
+                  <option value="上海银行">上海银行</option>
+                  <option value="浦发银行">浦发银行</option>
+                  <option value="兴业银行">兴业银行</option>
+                  <option value="浙商银行">浙商银行</option>
+                  <option value="宁波银行">宁波银行</option>
+                  <option value="中国渤海银行">中国渤海银行</option>
+                  <option value="华夏银行">华夏银行</option>
+                  <option value="中国农业银行">中国农业银行</option>
+                  <option value="中国交通银行">中国交通银行</option></select>
+                <span class="input-errorMsg"></span>
+              </div>
+            </div>
+            <div class="form-group input-style1 error">
+              <div class="w-p-100" for="withdrawAmount">
+                <b style="color: red;">*</b>
+                <!-- react-text: 190 -->提款金额:
+                <!-- /react-text --></div>
+              <div style="line-height: 42px; height: 42px;">
+                <input type="tel" class="input-style2 w-p-100" name="withdrawAmount" id="withdrawAmount" value="" placeholder="- 请填写 -">
+                <div class="f-l" style="display: none;">
+                  <b style="color: red;">*</b></div>
+              </div>
+              <span class="input-errorMsg">提款金额最少10元</span></div>
+            <div class="form-group input-style1 required">
+              <div class="w-p-100" for="withdrawPw">
+                <b style="color: red;">*</b>
+                <!-- react-text: 199 -->提款密码:
+                <!-- /react-text --></div>
+              <div style="line-height: 42px; height: 42px;">
+                <input type="password" class="input-style2 w-p-100 input-password" name="withdrawPw"  id="withdrawPw" value="" maxlength="6" placeholder="须为六位数字密码">
+                <div class="f-l" style="display: none;">
+                  <b style="color: red;">*</b></div>
+              </div>
+              <span class="input-errorMsg"></span>
+            </div>
+            <div class="withdraw-button-password-group">
+              <div>
+                <div>
+                  <span class="withdraw-button-password">0</span>
+                  <span class="withdraw-button-password">1</span>
+                  <span class="withdraw-button-password">2</span>
+                  <span class="withdraw-button-password">3</span>
+                  <span class="withdraw-button-password">4</span></div>
+                <div>
+                  <span class="withdraw-button-password">5</span>
+                  <span class="withdraw-button-password">6</span>
+                  <span class="withdraw-button-password">7</span>
+                  <span class="withdraw-button-password">8</span>
+                  <span class="withdraw-button-password">9</span></div>
+              </div>
+              <div class="withdraw-button-clear">清空</div></div>
+            <div style="height: 100px;">
+              <p class="f-r nextStep-w">下一步</p></div>
+          </form>
+          <div class="withdraw-records-button">提款交易纪录</div></div>
+        <div class="footer-bottom">
+          <div>
+            <style>.payment-method { display: flex; justify-content: center; padding: 20px 0; } .payment-method>img { height: 25px; margin: 0 5px; } .footer-top { background: #363636; padding: 20px 5px; text-align: left; } .footer-top>div { padding: 0 3px; } .footer-container { display: flex; flex-wrap: wrap; } .footer-container > div { flex: 1 50%; } .footer-content-title { font-size: 12px; font-weight: 500; color: #b4b4b4; margin: 11px 0; } .footer-link-group>div { padding: 0 3px; } .footer-link-group>div:active { color: #9b9b9b; } .footer-link-group, .footer-link-help-group { font-size: 14px; line-height: 24px; color: #6e6e6e; } .footer-container>.footer-copyright-text { text-align: center; margin: 20px; } @media screen and (min-width: 737px) { .payment-method > img { height: 35px; margin: 0 15px; } .footer-content-title { font-size: 13px; line-height: 1.1; } .footer-link-group img { height: 22px; } .footer-link-group, .footer-link-help-group { font-size: 13px; line-height: 22px; } .footer-container>.footer-copyright-text { font-size: 13px; } } @media screen and (min-width: 1000px) { .footer-container { margin: auto; } }</style>
+            <div>
+              <div class="footer-top">
+                <div class="footer-container">
+                  <div>
+                    <div class="footer-content-title">其它相关链接</div>
+                    <div class="footer-link-group">
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#about_us">关于我们</a></div>
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#sitemap">网站导览</a></div>
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#responsible_gaming">博彩责任</a></div>
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#terms_conditions">规则与条款</a></div>
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#privacy_policy">隐私权政策</a></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="footer-content-title">是否需要帮助？</div>
+                    <div class="footer-link-help-group">
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#qa">常见问题</a></div>
+                      <!--<div>在线客服</div>-->
+                      <div>
+                        <a href="http://mobile.hgg6789.com/mobile/main#contact_us">联系我们</a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="padding-top:20px;display: flex; align-items: center; justify-content: center;">
+                <!-- <div style="width: 116px; line-height: 40px; background-color: #84b752; border-color: #77a946; color: #fff; border-radius: 4px; font-size: 15px; cursor: pointer;" onclick="window.location='http://desktop.hgg6789.com';">切换至电脑版</div>--></div>
+              <div class="footer-container">
+                <div class="payment-method">
+                  <img src="../../images/unionpay.png">
+                  <img src="../../images/alipay.png">
+                  <img src="../../images/qq.png">
+                  <img src="../../images/wepay.png"></div>
+                <div class="footer-copyright-text">HG3535属于HG3535有限公司注册。
+                  <br>版权所有 © 2017
+                  <!--<br> 注册日期17/02/2017(最后更新20/02/2017)  --></div></div>
+            </div>
+          </div>
+        </div>
+        <!-- react-empty: 225 --></div>
+    </div>
+    <div id="loading" class="loading-container">
+      <div class="loading-figure"></div>
+    </div> 
+  </body>
+
+</html>
+<!-- 引导资源   -->
+<link href="../../js/enjoyhint/enjoyhint.css" rel="stylesheet">
+<script src="../../js/enjoyhint/enjoyhint.min.js"></script>
+<script src="../../js/enjoyhint/hint-sequence-withdraw.js"></script>

@@ -1,0 +1,1579 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1">
+
+    <link href="style/mobile.css" rel="stylesheet">
+    <link href="style/spiner.css" rel="stylesheet">
+    <link href="style/sweetalert.css" rel="stylesheet">
+    <link href="style/main.33955a3a.css" rel="stylesheet">
+    <link href="js/enjoyhint/enjoyhint.css" rel="stylesheet">
+
+    <title>MAIN-GUIDE</title>
+
+</head>
+
+<body class="" style="">
+<div id="root">
+    <div data-reactroot="">
+        <div class="topmenu-container">
+            <div class="topmenu-main-menu-sport">
+                <div class="topmenu-main-menu-logo-small" alt="Company Logo" style="visibility:hidden;"></div>
+                <div>
+                    <span class="topmenu-main-menu-item-active">
+                        更多游戏
+                        <span class="topmenu-main-menu-item-arrow-down"></span>
+                    </span>
+                </div>
+                <div>
+                    <div id="sportMenuBetHistory" class="sport-bet-history" style="position: static;">
+                        <div>
+                            投注记录
+                            <span class="sport-circle">1</span></div>
+                    </div>
+                    <div class="topmenu-main-menu-icon menu-icon-right-menu-logined" alt="Menu Icon"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mobile-topmenu-place-holder" style="position: relative"></div>
+
+        <div>
+            <!--<div id="simpleBetHistoryIdentifierTopMenu" class="simpleBetHistoryIdentifierTopMenu"></div>-->
+            <div id="sportTopMenu" class="sport-topmenu" style="">
+                <div class="sport-topmenu-item">
+                    <div class="sport-topmenu-btn menu">
+                        <a href="views/football/inplay.html"></a>
+                    </div>
+                </div>
+                <div class="sport-topmenu-item">
+                    <div>
+                        <a href="inplay.html">
+                            <div class="sport-topmenu-btn home active"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="sport-topmenu-item in-play in-play-nav">
+                    <div><a href="views/football/inplay.html">滚球盘</a></div>
+                </div>
+                <div class="sport-topmenu-item popular popular-nav">
+                    <div><a href="views/football/popular.html">即将开赛</a></div>
+                </div>
+                <div class="sport-topmenu-item today">
+                    <div><a href="views/football/today.html">今日赛事</a></div>
+                </div>
+                <div class="sport-topmenu-item parlay">
+                    <div><a href="views/football/guoguan-default.html">复式过关</a></div>
+                </div>
+            </div>
+            <!--<div id="sportMenuBetHistory" class="sport-bet-history">
+                <div>
+                    投注记录
+                    <span class="sport-circle">1</span></div>
+            </div>-->
+            <div>
+                <div id="mainSportTopMenu"
+                     class="mainSport-topmenu mainSport-topmenu-height mainSport-topmenu-height-login"
+                     style="margin-top:9px;">
+                    <div class="mainSport-topmenu2">
+                        <div class="mainSport-topmenu-item mainSport-topmenu-center">
+                            <div>
+                                <div class="mainSport-topmenu-btn">
+                                    <img src="images/icon_soccer.png" height="24px" alt="Football"></div>
+                                <div>足球</div>
+                            </div>
+                        </div>
+                        <div class="mainSport-topmenu-item mainSport-topmenu-center">
+                            <div>
+                                <div class="mainSport-topmenu-btn">
+                                    <img src="images/icon_basketball.png" height="24px" alt="Basketball"></div>
+                                <div>篮球</div>
+                            </div>
+                        </div>
+                        <div class="mainSport-topmenu-item mainSport-topmenu-center">
+                            <div>
+                                <div class="mainSport-topmenu-btn">
+                                    <img src="images/icon_tennis.png" height="24px" alt="Tennis"></div>
+                                <div>网球</div>
+                            </div>
+                        </div>
+                        <div class="mainSport-topmenu-item mainSport-topmenu-center">
+                            <div>
+                                <div class="mainSport-topmenu-btn">
+                                    <img src="images/icon_baseball.png" height="24px" alt="Baseball"></div>
+                                <div>棒球</div>
+                            </div>
+                        </div>
+                        <div class="mainSport-topmenu-item mainSport-topmenu-center mainSport-topmenu-text-color">
+                            <div>
+                                <div class="mainSport-topmenu-btn">
+                                    <img class="poker poker-k" src="images/poker_k.png" alt="">
+                                    <img class="poker poker-9" src="images/poker_9.png" alt=""></div>
+                                <div class="sport-tab-casino-text">真人荷官</div>
+                            </div>
+                        </div>
+                        <div class="mainSport-topmenu-item mainSport-topmenu-center mainSport-topmenu-text-color">
+                            <div>
+                                <div class="mainSport-topmenu-btn">
+                                    <img src="images/casino_off_btn_V2.png" height="30px" alt=""></div>
+                                <div class="sport-tab-casino-text">老虎机</div>
+                            </div>
+                        </div>
+                        <div class="mainSport-topmenu-item mainSport-topmenu-center">
+                            <div>
+                                <div class="mainSport-topmenu-btn">
+                                    <img src="images/icon_result_on.png" height="24px" alt="Baseball"></div>
+                                <div>赛果</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainSport">
+                    <div>
+                        <div class="main-Sport-inplayBorder2">
+                            <div class="main-Sport-inplayBorder">
+                                <div class="main-Sport-inplay">
+                                    <div class="main-Sport-inplayTitle">
+                                        <div class="main-Sport-inplayTitle-frame">
+                                            <div class="main-Sport-inplayTitle2">滚球盘</div>
+                                        </div>
+                                        <div class="main-Sport-circle">13</div>
+                                    </div>
+                                    <div class="main-pt-6 smain-pt-6">
+                                        <div>
+                                            <div class="main-Sport-title1">足球</div>
+                                        </div>
+                                        <div class="main-Sport-live-matches">
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-sports-border5">
+                                                    <div class="main-Sport-sports-border6">
+                                                        <div class="main-Sport-score2">
+                                                            <div class="main-Sport-score">0</div>
+                                                        </div>
+                                                        <div class="main-Sport-sports-item4">大田地铁</div>
+                                                    </div>
+                                                    <div class="main-Sport-sports-border6">
+                                                        <div class="main-Sport-score2">
+                                                            <div class="main-Sport-score">1</div>
+                                                        </div>
+                                                        <div class="main-Sport-sports-item4">金海</div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-Sport-width20 main-Sport-sports-item6">
+                                                    <div class="main-Sport-sports-item5-border">
+                                                        <div class="main-Sport-sports-item5">下半场</div>
+                                                        <div class="main-Sport-sports-item5">
+                                                            <span>48:31</span></div>
+                                                    </div>
+                                                    <div class="main-Sport-chevron3-style">
+                                                        <div class="main-Sport-chevron3"></div>
+                                                        <!-- react-text: 2242 -->
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-sports-border5">
+                                                    <div class="main-Sport-sports-border6">
+                                                        <div class="main-Sport-score2">
+                                                            <div class="main-Sport-score">0</div>
+                                                        </div>
+                                                        <div class="main-Sport-sports-item4">匈牙利U18</div>
+                                                    </div>
+                                                    <div class="main-Sport-sports-border6">
+                                                        <div class="main-Sport-score2">
+                                                            <div class="main-Sport-score">0</div>
+                                                        </div>
+                                                        <div class="main-Sport-sports-item4">俄罗斯U18</div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-Sport-width20 main-Sport-sports-item6">
+                                                    <div class="main-Sport-sports-item5-border">
+                                                        <div class="main-Sport-sports-item5"></div>
+                                                        <div class="main-Sport-sports-item5">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="main-Sport-chevron3-style">
+                                                        <div class="main-Sport-chevron3"></div>
+                                                        <!-- react-text: 2260 -->
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                            </div>
+                                            <!--<div class="main-Sport-width20 main-Sport-sports-item6">
+                                              <div class="main-Sport-sports-item5-border">
+                                                <div class="main-Sport-sports-item5"></div>
+                                                <div class="main-Sport-sports-item5">
+                                                  <span></span>
+                                                </div>
+                                              </div>
+                                              <div class="main-Sport-chevron3-style">
+                                                <div class="main-Sport-chevron3"></div>
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-sports-border5">
+                                                <div class="main-Sport-sports-border6">
+                                                    <div class="main-Sport-score2">
+                                                        <div class="main-Sport-score">2</div>
+                                                    </div>
+                                                    <div class="main-Sport-sports-item4">安芝U21</div>
+                                                </div>
+                                                <div class="main-Sport-sports-border6">
+                                                    <div class="main-Sport-score2">
+                                                        <div class="main-Sport-score">1</div>
+                                                    </div>
+                                                    <div class="main-Sport-sports-item4">乌法U21</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-width20 main-Sport-sports-item6">
+                                                <div class="main-Sport-sports-item5-border">
+                                                    <div class="main-Sport-sports-item5">下半场</div>
+                                                    <div class="main-Sport-sports-item5">
+                                                        <span>47:37</span></div>
+                                                </div>
+                                                <div class="main-Sport-chevron3-style">
+                                                    <div class="main-Sport-chevron3"></div>
+                                                    <!-- react-text: 2296 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-sports-border5">
+                                                <div class="main-Sport-sports-border6">
+                                                    <div class="main-Sport-score2">
+                                                        <div class="main-Sport-score">1</div>
+                                                    </div>
+                                                    <div class="main-Sport-sports-item4">波斯尼亚U17(女)</div>
+                                                </div>
+                                                <div class="main-Sport-sports-border6">
+                                                    <div class="main-Sport-score2">
+                                                        <div class="main-Sport-score">0</div>
+                                                    </div>
+                                                    <div class="main-Sport-sports-item4">克罗地亚U17(女)</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-width20 main-Sport-sports-item6">
+                                                <div class="main-Sport-sports-item5-border">
+                                                    <div class="main-Sport-sports-item5">下半场</div>
+                                                    <div class="main-Sport-sports-item5">
+                                                        <span>48:13</span></div>
+                                                </div>
+                                                <div class="main-Sport-chevron3-style">
+                                                    <div class="main-Sport-chevron3"></div>
+                                                    <!-- react-text: 2314 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-sports-border5">
+                                                <div class="main-Sport-sports-border6">
+                                                    <div class="main-Sport-score2">
+                                                        <div class="main-Sport-score">1</div>
+                                                    </div>
+                                                    <div class="main-Sport-sports-item4">哈尔科夫2队女)</div>
+                                                </div>
+                                                <div class="main-Sport-sports-border6">
+                                                    <div class="main-Sport-score2">
+                                                        <div class="main-Sport-score">0</div>
+                                                    </div>
+                                                    <div class="main-Sport-sports-item4">喜百年(女)</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-width20 main-Sport-sports-item6">
+                                                <div class="main-Sport-sports-item5-border">
+                                                    <div class="main-Sport-sports-item5">下半场</div>
+                                                    <div class="main-Sport-sports-item5">
+                                                        <span>46:39</span></div>
+                                                </div>
+                                                <div class="main-Sport-chevron3-style">
+                                                    <div class="main-Sport-chevron3"></div>
+                                                    <!-- react-text: 2332 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <div class="main-Sport-AllInPlay">
+                                            <div class="main-Sport-AllInPlay2">
+                                                <div class="main-Sport-AllInPlay5">
+                                                    <!-- react-text: 2337 -->所有
+                                                    <!-- /react-text -->
+                                                    <!-- react-text: 2338 -->足球
+                                                    <!-- /react-text -->
+                                                    <!-- react-text: 2339 -->滚球
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                            <div class="main-Sport-AllInPlay3">
+                                                <div class="main-Sport-AllInPlay4">
+                                                    <!-- react-text: 2342 -->11
+                                                    <!-- /react-text -->
+                                                    <div class="main-Sport-chevron1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-pt-6">
+                                    <div>
+                                        <div class="main-Sport-title1">篮球</div>
+                                    </div>
+                                    <div class="main-Sport-live-matches">
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-sports-border5">
+                                                <div class="main-Sport-sports-border6">
+                                                    <div class="main-Sport-sports-item4">布里斯班斯巴达人(女)</div>
+                                                </div>
+                                                <div class="main-Sport-sports-border6">
+                                                    <div class="main-Sport-sports-item4">麦凯陨石(女)</div>
+                                                </div>
+                                                <div class="main-Sport-sports-tennis2-space"></div>
+                                                <div class="main-Sport-sports-tennis3-score">
+                                                    <span class="main-Sport-score3 main-Sport-score-active">滚球</span>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-width20 main-Sport-sports-item6">
+                                                <div class="main-Sport-sports-item5-border">
+                                                    <div class="main-Sport-sports-item5"></div>
+                                                    <div class="main-Sport-sports-item5"></div>
+                                                </div>
+                                                <div class="main-Sport-chevron3-style">
+                                                    <div class="main-Sport-chevron3"></div>
+                                                    <!-- react-text: 2363 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-sports-border5">
+                                                <div class="main-Sport-sports-border6">
+                                                    <div class="main-Sport-score2">
+                                                        <div class="main-Sport-score">4</div>
+                                                    </div>
+                                                    <div class="main-Sport-sports-item4">菲律宾</div>
+                                                </div>
+                                                <div class="main-Sport-sports-border6">
+                                                    <div class="main-Sport-score2">
+                                                        <div class="main-Sport-score">1</div>
+                                                    </div>
+                                                    <div class="main-Sport-sports-item4">新加坡</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-width20 main-Sport-sports-item6">
+                                                <div class="main-Sport-sports-item5-border">
+                                                    <div class="main-Sport-sports-item5">第一节</div>
+                                                    <div class="main-Sport-sports-item5">10:00</div>
+                                                </div>
+                                                <div class="main-Sport-chevron3-style">
+                                                    <div class="main-Sport-chevron3"></div>
+                                                    <!-- react-text: 2380 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="text-align: center;">
+                                        <div class="main-Sport-AllInPlay">
+                                            <div class="main-Sport-AllInPlay2">
+                                                <div class="main-Sport-AllInPlay5">
+                                                    <!-- react-text: 2385 -->所有
+                                                    <!-- /react-text -->
+                                                    <!-- react-text: 2386 -->篮球
+                                                    <!-- /react-text -->
+                                                    <!-- react-text: 2387 -->滚球
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                            <div class="main-Sport-AllInPlay3">
+                                                <div class="main-Sport-AllInPlay4">
+                                                    <!-- react-text: 2390 -->2
+                                                    <!-- /react-text -->
+                                                    <div class="main-Sport-chevron1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div class="main-Sport-AllInPlay">
+                                        <div class="main-Sport-AllInPlay2">
+                                            <div class="main-Sport-AllInPlay5">所有 滚球盘</div>
+                                        </div>
+                                        <div class="main-Sport-AllInPlay3">
+                                            <div class="main-Sport-AllInPlay4">
+                                                <!-- react-text: 2398 -->13
+                                                <!-- /react-text -->
+                                                <div class="main-Sport-chevron1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-Sport-feature2">
+                        <div class="main-Sport-feature">
+                            <div class="main-Sport-featureTitle">
+                                <div class="main-Sport-featureTitle2">特色赛事</div>
+                            </div>
+                            <div class="main-Sport-leagues">
+                                <div class="main-Sport-gameWidth">
+                                    <div class="main-Sport-game-row-border">
+                                        <div class="main-Sport-game-row-border3">
+                                            <div class="main-Sport-game-title">英格兰超级联赛</div>
+                                            <div class="main-Sport-hidden">滚球</div>
+                                        </div>
+                                        <div class="main-Sport-game-title4">
+                                            <div class="main-Sport-game-title2">
+                              <span class="main-Sport-hidden">
+                                <span class="main-Sport-score"></span>
+                              </span>
+                                                <!-- react-text: 2409 -->切尔西
+                                                <!-- /react-text --></div>
+                                            <div class="main-Sport-game-title2">
+                              <span class="main-Sport-hidden">
+                                <span class="main-Sport-score"></span>
+                              </span>
+                                                <!-- react-text: 2413 -->爱华顿
+                                                <!-- /react-text --></div>
+                                        </div>
+                                        <div class="main-Sport-game-datetime-border">
+                                            <div>
+                                                <div class="main-Sport-hidden"></div>
+                                                <div class="main-Sport-game-datetime1">27/08</div>
+                                                <div class="main-Sport-game-datetime2"></div>
+                                            </div>
+                                            <div class="main-Sport-chevron2-style">
+                                                <div class="main-Sport-chevron2"></div>
+                                                <!-- react-text: 2421 -->
+                                                <!-- /react-text --></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-Sport-gameWidth">
+                                    <div class="main-Sport-game-row-border">
+                                        <div class="main-Sport-game-row-border3">
+                                            <div class="main-Sport-game-title">西班牙甲组联赛</div>
+                                            <div class="main-Sport-hidden">滚球</div>
+                                        </div>
+                                        <div class="main-Sport-game-title4">
+                                            <div class="main-Sport-game-title2">
+                              <span class="main-Sport-hidden">
+                                <span class="main-Sport-score"></span>
+                              </span>
+                                                <!-- react-text: 2431 -->皇家苏斯达
+                                                <!-- /react-text --></div>
+                                            <div class="main-Sport-game-title2">
+                              <span class="main-Sport-hidden">
+                                <span class="main-Sport-score"></span>
+                              </span>
+                                                <!-- react-text: 2435 -->维拉利尔
+                                                <!-- /react-text --></div>
+                                        </div>
+                                        <div class="main-Sport-game-datetime-border">
+                                            <div>
+                                                <div class="main-Sport-hidden"></div>
+                                                <div class="main-Sport-game-datetime1">25/08</div>
+                                                <div class="main-Sport-game-datetime2"></div>
+                                            </div>
+                                            <div class="main-Sport-chevron2-style">
+                                                <div class="main-Sport-chevron2"></div>
+                                                <!-- react-text: 2443 -->
+                                                <!-- /react-text --></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-Sport-gameWidth">
+                                    <div class="main-Sport-game-row-border">
+                                        <div class="main-Sport-game-row-border3">
+                                            <div class="main-Sport-game-title">德国甲组联赛</div>
+                                            <div class="main-Sport-hidden">滚球</div>
+                                        </div>
+                                        <div class="main-Sport-game-title4">
+                                            <div class="main-Sport-game-title2">
+                              <span class="main-Sport-hidden">
+                                <span class="main-Sport-score"></span>
+                              </span>
+                                                <!-- react-text: 2453 -->科隆
+                                                <!-- /react-text --></div>
+                                            <div class="main-Sport-game-title2">
+                              <span class="main-Sport-hidden">
+                                <span class="main-Sport-score"></span>
+                              </span>
+                                                <!-- react-text: 2457 -->汉堡
+                                                <!-- /react-text --></div>
+                                        </div>
+                                        <div class="main-Sport-game-datetime-border">
+                                            <div>
+                                                <div class="main-Sport-hidden"></div>
+                                                <div class="main-Sport-game-datetime1">25/08</div>
+                                                <div class="main-Sport-game-datetime2"></div>
+                                            </div>
+                                            <div class="main-Sport-chevron2-style">
+                                                <div class="main-Sport-chevron2"></div>
+                                                <!-- react-text: 2465 -->
+                                                <!-- /react-text --></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main-Sport-sports2">
+                        <div class="main-Sport-sports">
+                            <div class="main-Sport-sportsTitle">
+                                <div class="main-Sport-sportsTitle2">体育</div>
+                            </div>
+                            <div class="main-Sport-sportButton">
+                                <div class="main-Sport-show">
+                                    <div class="main-Sport-show-text">显示</div>
+                                </div>
+                                <div class="main-Sport-about-to-start">
+                                    <div class="main-Sport-about-to-start-text">即将开赛</div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div>
+                                    <div class="main-Sport-football-frame">
+                                        <div class="main-Sport-football">足球</div>
+                                        <div class="main-Sport-football-frame-icon">
+                                            <img src="images/icon_soccer_on.png" height="24px" alt="Football"></div>
+                                    </div>
+                                    <div class="main-Sport-football-items">
+                                        <div class="main-Sport-leagues">
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-football-item6">
+                                                    <div>
+                                                        <div class="main-Sport-football-item4">皇家苏斯达</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="main-Sport-football-item4">维拉利尔</div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-Sport-football-datetime-border">
+                                                    <div class="main-Sport-football-datetime-border2">
+                                                        <div class="main-Sport-football-datetime1">25/08</div>
+                                                        <div class="main-Sport-football-datetime2">14:15</div>
+                                                    </div>
+                                                    <div class="main-Sport-chevron2-style">
+                                                        <div class="main-Sport-chevron2"></div>
+                                                        <!-- react-text: 2485 -->
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-football-item6">
+                                                    <div>
+                                                        <div class="main-Sport-football-item4">皇家贝迪斯</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="main-Sport-football-item4">切尔达</div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-Sport-football-datetime-border">
+                                                    <div class="main-Sport-football-datetime-border2">
+                                                        <div class="main-Sport-football-datetime1">25/08</div>
+                                                        <div class="main-Sport-football-datetime2">16:00</div>
+                                                    </div>
+                                                    <div class="main-Sport-chevron2-style">
+                                                        <div class="main-Sport-chevron2"></div>
+                                                        <!-- react-text: 2498 -->
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-football-item6">
+                                                    <div>
+                                                        <div class="main-Sport-football-item4">艾拉维斯</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="main-Sport-football-item4">巴塞罗那</div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-Sport-football-datetime-border">
+                                                    <div class="main-Sport-football-datetime-border2">
+                                                        <div class="main-Sport-football-datetime1">26/08</div>
+                                                        <div class="main-Sport-football-datetime2">12:15</div>
+                                                    </div>
+                                                    <div class="main-Sport-chevron2-style">
+                                                        <div class="main-Sport-chevron2"></div>
+                                                        <!-- react-text: 2511 -->
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-football-item6">
+                                                    <div>
+                                                        <div class="main-Sport-football-item4">科隆</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="main-Sport-football-item4">汉堡</div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-Sport-football-datetime-border">
+                                                    <div class="main-Sport-football-datetime-border2">
+                                                        <div class="main-Sport-football-datetime1">25/08</div>
+                                                        <div class="main-Sport-football-datetime2">14:30</div>
+                                                    </div>
+                                                    <div class="main-Sport-chevron2-style">
+                                                        <div class="main-Sport-chevron2"></div>
+                                                        <!-- react-text: 2524 -->
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-football-item6">
+                                                    <div>
+                                                        <div class="main-Sport-football-item4">云达不莱梅</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="main-Sport-football-item4">拜仁慕尼黑</div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-Sport-football-datetime-border">
+                                                    <div class="main-Sport-football-datetime-border2">
+                                                        <div class="main-Sport-football-datetime1">26/08</div>
+                                                        <div class="main-Sport-football-datetime2">09:30</div>
+                                                    </div>
+                                                    <div class="main-Sport-chevron2-style">
+                                                        <div class="main-Sport-chevron2"></div>
+                                                        <!-- react-text: 2537 -->
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-football-item6">
+                                                    <div>
+                                                        <div class="main-Sport-football-item4">多特蒙德</div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="main-Sport-football-item4">哈化柏林</div>
+                                                    </div>
+                                                </div>
+                                                <div class="main-Sport-football-datetime-border">
+                                                    <div class="main-Sport-football-datetime-border2">
+                                                        <div class="main-Sport-football-datetime1">26/08</div>
+                                                        <div class="main-Sport-football-datetime2">12:30</div>
+                                                    </div>
+                                                    <div class="main-Sport-chevron2-style">
+                                                        <div class="main-Sport-chevron2"></div>
+                                                        <!-- react-text: 2550 -->
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-league-button">
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">今日赛事</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2558 -->129
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">西班牙甲组联赛</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2566 -->11
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">德国甲组联赛</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2574 -->10
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">法国甲组联赛</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2582 -->11
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-line-center">
+                                            <div class="main-Sport-line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="main-Sport-basketball-frame">
+                                        <div class="main-Sport-basketball">篮球</div>
+                                        <div class="main-Sport-basketball-frame-icon">
+                                            <img src="images/icon_basketball_on.png" height="24px" alt="Basketball">
+                                        </div>
+                                    </div>
+                                    <div class="main-Sport-basketball-items">
+                                        <div class="main-Sport-leagues">
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-basketball-item4">
+                                                    <div class="main-Sport-basketball-item2">麦凯流星</div>
+                                                    <div class="main-Sport-basketball-item2">汤斯维尔热火</div>
+                                                </div>
+                                                <div class="main-Sport-basketball-datetime-border">
+                                                    <div class="main-Sport-basketball-datetime-border2">
+                                                        <div class="main-Sport-basketball-datetime1">25/08</div>
+                                                        <div class="main-Sport-basketball-datetime2">05:30</div>
+                                                    </div>
+                                                    <div class="main-Sport-chevron2-style">
+                                                        <div class="main-Sport-chevron2"></div>
+                                                        <!-- react-text: 2603 -->
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-basketball-item4">
+                                                    <div class="main-Sport-basketball-item2">盟特甘比尔先锋</div>
+                                                    <div class="main-Sport-basketball-item2">纽纳华丁幽灵</div>
+                                                </div>
+                                                <div class="main-Sport-basketball-datetime-border">
+                                                    <div class="main-Sport-basketball-datetime-border2">
+                                                        <div class="main-Sport-basketball-datetime1">25/08</div>
+                                                        <div class="main-Sport-basketball-datetime2">06:00</div>
+                                                    </div>
+                                                    <div class="main-Sport-chevron2-style">
+                                                        <div class="main-Sport-chevron2"></div>
+                                                        <!-- react-text: 2614 -->
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-basketball-item4">
+                                                    <div class="main-Sport-basketball-item2">立陶宛</div>
+                                                    <div class="main-Sport-basketball-item2">俄罗斯</div>
+                                                </div>
+                                                <div class="main-Sport-basketball-datetime-border">
+                                                    <div class="main-Sport-basketball-datetime-border2">
+                                                        <div class="main-Sport-basketball-datetime1">25/08</div>
+                                                        <div class="main-Sport-basketball-datetime2">05:30</div>
+                                                    </div>
+                                                    <div class="main-Sport-chevron2-style">
+                                                        <div class="main-Sport-chevron2"></div>
+                                                        <!-- react-text: 2625 -->
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-basketball-item4">
+                                                    <div class="main-Sport-basketball-item2">中华台北(女)</div>
+                                                    <div class="main-Sport-basketball-item2">加拿大(女)</div>
+                                                </div>
+                                                <div class="main-Sport-basketball-datetime-border">
+                                                    <div class="main-Sport-basketball-datetime-border2">
+                                                        <div class="main-Sport-basketball-datetime1">25/08</div>
+                                                        <div class="main-Sport-basketball-datetime2">05:30</div>
+                                                    </div>
+                                                    <div class="main-Sport-chevron2-style">
+                                                        <div class="main-Sport-chevron2"></div>
+                                                        <!-- react-text: 2636 -->
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-league-button">
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">所有赛事</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2644 -->17
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">昆士兰篮球联赛</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2652 -->1
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">东南澳洲篮球联赛</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2660 -->1
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">世界大学生夏季运动会篮球2017(在中华台北)</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2668 -->1
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-line-center">
+                                            <div class="main-Sport-line"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="main-Sport-tennis-frame">
+                                        <div class="main-Sport-tennis">网球</div>
+                                        <div class="main-Sport-tennis-frame-icon">
+                                            <img src="images/icon_tennis_on.png" height="24px" alt="Tennis"></div>
+                                    </div>
+                                    <div class="main-Sport-tennis-items">
+                                        <div class="main-Sport-tennis-row-border3">
+                                            <div class="main-Sport-tennis-row-border2">
+                                                <div class="main-Sport-tennis-row-border">
+                                                    <div class="main-Sport-tennis-item8">
+                                                        <div class="main-Sport-tennis-item2">凯尔.埃德蒙(大不列颠)</div>
+                                                        <div class="main-Sport-tennis-item2">达米尔.德祖赫(波斯尼亚)</div>
+                                                    </div>
+                                                    <div class="main-Sport-tennis-datetime-border">
+                                                        <div class="main-Sport-tennis-datetime-border2">
+                                                            <div class="main-Sport-tennis-datetime1">25/08</div>
+                                                            <div class="main-Sport-tennis-datetime2">19:00</div>
+                                                        </div>
+                                                        <div class="main-Sport-chevron2-style">
+                                                            <div class="main-Sport-chevron2"></div>
+                                                            <!-- react-text: 2690 -->
+                                                            <!-- /react-text --></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-tennis-row-border2">
+                                                <div class="main-Sport-tennis-row-border">
+                                                    <div class="main-Sport-tennis-item8">
+                                                        <div class="main-Sport-tennis-item2">罗伯托.包蒂斯塔.阿古特(西班牙)</div>
+                                                        <div class="main-Sport-tennis-item2">简.伦纳德.斯特罗费(德国)</div>
+                                                    </div>
+                                                    <div class="main-Sport-tennis-datetime-border">
+                                                        <div class="main-Sport-tennis-datetime-border2">
+                                                            <div class="main-Sport-tennis-datetime1">25/08</div>
+                                                            <div class="main-Sport-tennis-datetime2">21:00</div>
+                                                        </div>
+                                                        <div class="main-Sport-chevron2-style">
+                                                            <div class="main-Sport-chevron2"></div>
+                                                            <!-- react-text: 2702 -->
+                                                            <!-- /react-text --></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-tennis-row-border2">
+                                                <div class="main-Sport-tennis-row-border">
+                                                    <div class="main-Sport-tennis-item8">
+                                                        <div class="main-Sport-tennis-item2">埃莉斯.梅尔滕斯(比利时)</div>
+                                                        <div class="main-Sport-tennis-item2">多米妮卡.齐步尔科娃(斯洛伐克)</div>
+                                                    </div>
+                                                    <div class="main-Sport-tennis-datetime-border">
+                                                        <div class="main-Sport-tennis-datetime-border2">
+                                                            <div class="main-Sport-tennis-datetime1">25/08</div>
+                                                            <div class="main-Sport-tennis-datetime2">15:00</div>
+                                                        </div>
+                                                        <div class="main-Sport-chevron2-style">
+                                                            <div class="main-Sport-chevron2"></div>
+                                                            <!-- react-text: 2714 -->
+                                                            <!-- /react-text --></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-tennis-row-border2">
+                                                <div class="main-Sport-tennis-row-border">
+                                                    <div class="main-Sport-tennis-item8">
+                                                        <div class="main-Sport-tennis-item2">阿格尼西卡.拉德万思卡(波兰)</div>
+                                                        <div class="main-Sport-tennis-item2">达里亚.加夫里洛娃(澳洲)</div>
+                                                    </div>
+                                                    <div class="main-Sport-tennis-datetime-border">
+                                                        <div class="main-Sport-tennis-datetime-border2">
+                                                            <div class="main-Sport-tennis-datetime1">25/08</div>
+                                                            <div class="main-Sport-tennis-datetime2">19:00</div>
+                                                        </div>
+                                                        <div class="main-Sport-chevron2-style">
+                                                            <div class="main-Sport-chevron2"></div>
+                                                            <!-- react-text: 2726 -->
+                                                            <!-- /react-text --></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-league-button">
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">所有赛事</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2734 -->11
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">ATP温斯顿塞勒姆公开赛</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2742 -->2
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">WTA纽黑文公开赛</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2750 -->2
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">ATP温斯顿塞勒姆公开赛-双打</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2758 -->1
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-Sport-line-center">
+                                        <div class="main-Sport-line"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="main-Sport-baseball-frame">
+                                        <div class="main-Sport-baseball-title">棒球</div>
+                                        <div class="main-Sport-baseball-frame-icon">
+                                            <img src="images/icon_baseball_on.png" height="24px" alt="Baseball"></div>
+                                    </div>
+                                    <div class="main-Sport-baseball-items">
+                                        <div class="main-Sport-baseball-row-border3">
+                                            <div class="main-Sport-baseball-row-border2">
+                                                <div class="main-Sport-baseball-row-border">
+                                                    <div class="main-Sport-baseball-item8">
+                                                        <div class="main-Sport-baseball-item2">费城费城人队</div>
+                                                        <div class="main-Sport-baseball-item2">芝加哥小熊队</div>
+                                                    </div>
+                                                    <div class="main-Sport-baseball-datetime-border">
+                                                        <div class="main-Sport-baseball-datetime-border2">
+                                                            <div class="main-Sport-baseball-datetime1">25/08</div>
+                                                            <div class="main-Sport-baseball-datetime2">19:05</div>
+                                                        </div>
+                                                        <div class="main-Sport-chevron2-style">
+                                                            <div class="main-Sport-chevron2"></div>
+                                                            <!-- react-text: 2780 -->
+                                                            <!-- /react-text --></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-baseball-row-border2">
+                                                <div class="main-Sport-baseball-row-border">
+                                                    <div class="main-Sport-baseball-item8">
+                                                        <div class="main-Sport-baseball-item2">纽约洋基队</div>
+                                                        <div class="main-Sport-baseball-item2">西雅图水手队</div>
+                                                    </div>
+                                                    <div class="main-Sport-baseball-datetime-border">
+                                                        <div class="main-Sport-baseball-datetime-border2">
+                                                            <div class="main-Sport-baseball-datetime1">25/08</div>
+                                                            <div class="main-Sport-baseball-datetime2">19:05</div>
+                                                        </div>
+                                                        <div class="main-Sport-chevron2-style">
+                                                            <div class="main-Sport-chevron2"></div>
+                                                            <!-- react-text: 2792 -->
+                                                            <!-- /react-text --></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-baseball-row-border2">
+                                                <div class="main-Sport-baseball-row-border">
+                                                    <div class="main-Sport-baseball-item8">
+                                                        <div class="main-Sport-baseball-item2">多伦多蓝鸟队</div>
+                                                        <div class="main-Sport-baseball-item2">明尼苏达双城</div>
+                                                    </div>
+                                                    <div class="main-Sport-baseball-datetime-border">
+                                                        <div class="main-Sport-baseball-datetime-border2">
+                                                            <div class="main-Sport-baseball-datetime1">25/08</div>
+                                                            <div class="main-Sport-baseball-datetime2">19:05</div>
+                                                        </div>
+                                                        <div class="main-Sport-chevron2-style">
+                                                            <div class="main-Sport-chevron2"></div>
+                                                            <!-- react-text: 2804 -->
+                                                            <!-- /react-text --></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-baseball-row-border2">
+                                                <div class="main-Sport-baseball-row-border">
+                                                    <div class="main-Sport-baseball-item8">
+                                                        <div class="main-Sport-baseball-item2">斗山熊</div>
+                                                        <div class="main-Sport-baseball-item2">耐克森英雄</div>
+                                                    </div>
+                                                    <div class="main-Sport-baseball-datetime-border">
+                                                        <div class="main-Sport-baseball-datetime-border2">
+                                                            <div class="main-Sport-baseball-datetime1">25/08</div>
+                                                            <div class="main-Sport-baseball-datetime2">05:30</div>
+                                                        </div>
+                                                        <div class="main-Sport-chevron2-style">
+                                                            <div class="main-Sport-chevron2"></div>
+                                                            <!-- react-text: 2816 -->
+                                                            <!-- /react-text --></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-league-button">
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">所有赛事</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2824 -->17
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">美国职业棒球</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2832 -->13
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-gameWidth">
+                                                <div class="main-Sport-frameDogCage">
+                                                    <div class="main-Sport-frameDogCage2">
+                                                        <div class="main-Sport-Dog3">韩国职业棒球</div>
+                                                    </div>
+                                                    <div class="main-Sport-DogCage4">
+                                                        <div class="main-Sport-Dog5">
+                                                            <!-- react-text: 2840 -->5
+                                                            <!-- /react-text -->
+                                                            <div class="main-Sport-chevron1"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-Sport-line-center">
+                                        <div class="main-Sport-line-space"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-Sport-hidden">
+                                <div>
+                                    <div>
+                                        <div class="main-Sport-football">足球</div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">班特列</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">绿色古利</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">58分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 2858 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">桑德菲杰</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">斯达</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">58分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 2870 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">江陵</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">庆州KHNP</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">58分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 2882 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">昌原</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">天安城</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">58分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 2894 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">釜山运输</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">木浦市</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">58分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 2906 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">阿森纳图拉U21</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">阿马卡U21</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">58分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 2918 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div style="text-align: center;">
+                                            <div class="main-Sport-AllInPlay">
+                                                <div class="main-Sport-AllInPlay2">
+                                                    <div class="main-Sport-AllInPlay5">
+                                                        <!-- react-text: 2923 -->所有
+                                                        <!-- /react-text -->
+                                                        <!-- react-text: 2924 -->足球
+                                                        <!-- /react-text -->
+                                                        <!-- react-text: 2925 -->即将开赛
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                                <div class="main-Sport-AllInPlay3">
+                                                    <div class="main-Sport-AllInPlay4">
+                                                        <!-- react-text: 2928 -->7
+                                                        <!-- /react-text -->
+                                                        <div class="main-Sport-chevron1"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-Sport-line-center">
+                                        <div class="main-Sport-line"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="main-Sport-football">篮球</div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">麦凯流星</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">汤斯维尔热火</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">28分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 2946 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">盟特甘比尔先锋</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">纽纳华丁幽灵</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">58分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 2958 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">立陶宛</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">俄罗斯</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">28分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 2970 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">中华台北(女)</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">加拿大(女)</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">28分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 2982 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">美国(女)</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">澳洲(女)</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">28分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 2994 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div style="text-align: center;">
+                                            <div class="main-Sport-AllInPlay">
+                                                <div class="main-Sport-AllInPlay2">
+                                                    <div class="main-Sport-AllInPlay5">
+                                                        <!-- react-text: 2999 -->所有
+                                                        <!-- /react-text -->
+                                                        <!-- react-text: 3000 -->篮球
+                                                        <!-- /react-text -->
+                                                        <!-- react-text: 3001 -->即将开赛
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                                <div class="main-Sport-AllInPlay3">
+                                                    <div class="main-Sport-AllInPlay4">
+                                                        <!-- react-text: 3004 -->5
+                                                        <!-- /react-text -->
+                                                        <div class="main-Sport-chevron1"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-Sport-line-center">
+                                        <div class="main-Sport-line"></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div class="main-Sport-football">棒球</div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">斗山熊</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">耐克森英雄</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">28分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 3022 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">NC恐龙</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">KT巫师队</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">28分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 3034 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">三星狮</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">SK飞龙</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">28分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 3046 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">韩火鹰</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">起亚虎</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">28分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 3058 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div class="main-Sport-gameWidth">
+                                            <div class="main-Sport-football-item6">
+                                                <div>
+                                                    <div class="main-Sport-football-item4">乐天巨人</div>
+                                                </div>
+                                                <div>
+                                                    <div class="main-Sport-football-item4">LG双子</div>
+                                                </div>
+                                            </div>
+                                            <div class="main-Sport-football-datetime-border">
+                                                <div class="main-Sport-football-datetime-border2">
+                                                    <div class="main-Sport-football-datetime1">28分钟</div>
+                                                </div>
+                                                <div class="main-Sport-chevron2-style">
+                                                    <div class="main-Sport-chevron2"></div>
+                                                    <!-- react-text: 3070 -->
+                                                    <!-- /react-text --></div>
+                                            </div>
+                                        </div>
+                                        <div style="text-align: center;">
+                                            <div class="main-Sport-AllInPlay">
+                                                <div class="main-Sport-AllInPlay2">
+                                                    <div class="main-Sport-AllInPlay5">
+                                                        <!-- react-text: 3075 -->所有
+                                                        <!-- /react-text -->
+                                                        <!-- react-text: 3076 -->棒球
+                                                        <!-- /react-text -->
+                                                        <!-- react-text: 3077 -->即将开赛
+                                                        <!-- /react-text --></div>
+                                                </div>
+                                                <div class="main-Sport-AllInPlay3">
+                                                    <div class="main-Sport-AllInPlay4">
+                                                        <!-- react-text: 3080 -->5
+                                                        <!-- /react-text -->
+                                                        <div class="main-Sport-chevron1"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-Sport-line-center">
+                                        <div class="main-Sport-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+    <div class="footer-bottom">
+        <div></div>
+    </div>
+</div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/bet-common.js"></script>
+
+<!-- 引导资源   -->
+<!--<link href="js/enjoyhint/enjoyhint.css" rel="stylesheet">-->
+<script src="js/enjoyhint/enjoyhint.min.js"></script>
+<script src="js/enjoyhint/hint-sequence-guide.js"></script>
+
+</body>
+
+</html>
+
+
+<script type="text/javascript">
+    $(function () {
+        $(".main-Sport-gameWidth").append('<div class="foo leftFoo"></div><div class="foo centerFoo"></div><div class="foo rightFoo"></div>');
+
+        /*var ele = $('.topmenu-main-menu-item-active');
+
+         console.log(ele.width(),ele.height(), ele.offset().left, ele.offset().top)
+         var react = $('.react')
+         react.css({
+         'background':'rgba(255,255,255,0.7)',
+         'position': 'absolute',
+         'width': ele.width() + 'px',
+         'height': ele.height() + 'px',
+         'left' : ele.offset().left + 'px',
+         'top' : ele.offset().top + 'px'
+         })
+         */
+
+    })
+</script>
