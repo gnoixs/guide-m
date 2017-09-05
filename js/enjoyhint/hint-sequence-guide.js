@@ -57,14 +57,6 @@ var enjoyhint_script_steps = [
   'showSkip' : true, 
   'showNext' : false
 }
-
-
-
-
-
-
-
-
 ];
 
 enjoyhint_instance.set(enjoyhint_script_steps);

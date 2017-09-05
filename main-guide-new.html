@@ -208,6 +208,9 @@
             font-weight: 600;
             font-size: 16px;
         }
+        .center .list{
+            border-bottom: 2px solid #b4b4b4;
+        }
         .center .list li{
             border-bottom: 1px solid #ebebeb;
             height: 55px;
@@ -267,6 +270,51 @@
             transform: rotate(45deg);
             vertical-align: middle;
         }
+        .navBtn{
+            width: 98%;
+            margin: 10px auto;
+            background: #e4e4e4;
+            border-radius: 3px;
+            height: 50px;
+            font-size: 15px;
+        }
+        .navBtn div{
+            display: inline-block;
+        }
+        .navBtn .left{
+            width: 100%;
+            line-height: 50px;
+            text-align: center;
+            margin-left: -50px;
+            padding-left:50px;
+            box-sizing: border-box;
+            color: #323232;
+        }
+        .navBtn .right{
+            width: 50px;
+            height: 50px;
+            background: #bcbcbc;
+            border-radius: 0 3px 3px 0;
+            color: #323232;
+            text-align: center;
+            line-height: 50px;
+            float: right;
+        }
+        .navBtn .right i{
+            height: 5px;
+            left: .15em;
+            position: relative;
+            top: -1px;
+            width: 5px;
+            border-style: solid;
+            border-width: 1px 1px 0 0;
+            content: "";
+            display: inline-block;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+            vertical-align: middle;
+        }
         .foot{
             width: 100%;
             height: 10px;
@@ -276,7 +324,7 @@
 </head>
 <body>
 <div class="container">
-    <header>
+    <header id="step13">
         <div class="top">
             <h1>logo</h1>
             <div class="more" id="step1">更多游戏<span></span></div>
@@ -334,11 +382,11 @@
                     <li>
                         <div class="lf">
                             <span>0</span>
-                            <span>1</span>
+                            <span>0</span>
                         </div>
                         <div class="ct">
-                            <span>大田地铁</span>
-                            <span>金海</span>
+                            <span>匈牙利U18</span>
+                            <span>俄罗斯U18</span>
                         </div>
                         <div class="rt">
                             <span>下半场</span>
@@ -349,180 +397,162 @@
 
                     <li>
                         <div class="lf">
-                            <span>0</span>
+                            <span>2</span>
                             <span>1</span>
                         </div>
                         <div class="ct">
-                            <span>大田地铁</span>
-                            <span>金海</span>
+                            <span>安芝U21</span>
+                            <span>乌法U21</span>
                         </div>
                         <div class="rt">
                             <span>下半场</span>
-                            <span>48:31</span>
+                            <span>47:37</span>
                             <i></i>
                         </div>
                     </li>
 
                     <li>
                         <div class="lf">
-                            <span>0</span>
                             <span>1</span>
+                            <span>0</span>
                         </div>
                         <div class="ct">
-                            <span>大田地铁</span>
-                            <span>金海</span>
+                            <span>波斯尼亚U17(女)</span>
+                            <span>克罗地亚U17(女)</span>
                         </div>
                         <div class="rt">
                             <span>下半场</span>
-                            <span>48:31</span>
+                            <span>48:13</span>
+                            <i></i>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="lf">
+                            <span>1</span>
+                            <span>0</span>
+                        </div>
+                        <div class="ct">
+                            <span>哈尔科夫2队(女)</span>
+                            <span>喜百年(女)</span>
+                        </div>
+                        <div class="rt">
+                            <span>下半场</span>
+                            <span>46:39</span>
                             <i></i>
                         </div>
                     </li>
 
                 </ul>
             </div>
-            <!-- more -->
-            <div class="playTitle">
-                滚球盘<span>13</span>
+
+            <div class="navBtn">
+                <div class="left">所有 足球 滚球</div>
+                <div class="right">11<i></i></div>
             </div>
-            <h2>足球</h2>
-            <ul class="list">
-                <li>
-                    <div class="lf">
-                        <span>0</span>
-                        <span>1</span>
-                    </div>
-                    <div class="ct">
-                        <span>大田地铁</span>
-                        <span>金海</span>
-                    </div>
-                    <div class="rt">
-                        <span>下半场</span>
-                        <span>48:31</span>
-                        <i></i>
-                    </div>
-                </li>
 
-                <li>
-                    <div class="lf">
-                        <span>0</span>
-                        <span>1</span>
-                    </div>
-                    <div class="ct">
-                        <span>大田地铁</span>
-                        <span>金海</span>
-                    </div>
-                    <div class="rt">
-                        <span>下半场</span>
-                        <span>48:31</span>
-                        <i></i>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="lf">
-                        <span>0</span>
-                        <span>1</span>
-                    </div>
-                    <div class="ct">
-                        <span>大田地铁</span>
-                        <span>金海</span>
-                    </div>
-                    <div class="rt">
-                        <span>下半场</span>
-                        <span>48:31</span>
-                        <i></i>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="lf">
-                        <span>0</span>
-                        <span>1</span>
-                    </div>
-                    <div class="ct">
-                        <span>大田地铁</span>
-                        <span>金海</span>
-                    </div>
-                    <div class="rt">
-                        <span>下半场</span>
-                        <span>48:31</span>
-                        <i></i>
-                    </div>
-                </li>
-
-            </ul>
-
-            <div class="playTitle">
-                滚球盘<span>13</span>
+            <div style="margin-bottom: 15px;">
+                <h2>篮球</h2>
+                <ul class="list">
+                    <li>
+                        <div class="ct">
+                            <span style="width: 160px;">布里斯班斯巴达人(女)</span>
+                            <span>麦凯陨石(女)</span>
+                        </div>
+                        <div class="rt">
+                            <span>第一节</span>
+                            <span>10:00</span>
+                            <i></i>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <h2>足球</h2>
-            <ul class="list">
-                <li>
-                    <div class="lf">
-                        <span>0</span>
-                        <span>1</span>
-                    </div>
-                    <div class="ct">
-                        <span>大田地铁</span>
-                        <span>金海</span>
-                    </div>
-                    <div class="rt">
-                        <span>下半场</span>
-                        <span>48:31</span>
-                        <i></i>
-                    </div>
-                </li>
 
-                <li>
-                    <div class="lf">
-                        <span>0</span>
-                        <span>1</span>
-                    </div>
-                    <div class="ct">
-                        <span>大田地铁</span>
-                        <span>金海</span>
-                    </div>
-                    <div class="rt">
-                        <span>下半场</span>
-                        <span>48:31</span>
-                        <i></i>
-                    </div>
-                </li>
+            <div style="margin-bottom: 15px;">
+                <h2>滚球</h2>
+                <ul class="list">
+                    <li>
+                        <div class="lf">
+                            <span>4</span>
+                            <span>1</span>
+                        </div>
+                        <div class="ct">
+                            <span>菲律宾</span>
+                            <span>新加坡</span>
+                        </div>
+                        <div class="rt">
+                            <span>第一节</span>
+                            <span>10:00</span>
+                            <i></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-                <li>
-                    <div class="lf">
-                        <span>0</span>
-                        <span>1</span>
-                    </div>
-                    <div class="ct">
-                        <span>大田地铁</span>
-                        <span>金海</span>
-                    </div>
-                    <div class="rt">
-                        <span>下半场</span>
-                        <span>48:31</span>
-                        <i></i>
-                    </div>
-                </li>
+            <div class="navBtn">
+                <div class="left">所有 篮球 滚球</div>
+                <div class="right">11<i></i></div>
+            </div>
 
-                <li>
-                    <div class="lf">
-                        <span>0</span>
-                        <span>1</span>
-                    </div>
-                    <div class="ct">
-                        <span>大田地铁</span>
-                        <span>金海</span>
-                    </div>
-                    <div class="rt">
-                        <span>下半场</span>
-                        <span>48:31</span>
-                        <i></i>
-                    </div>
-                </li>
+            <div class="navBtn">
+                <div class="left">所有 滚球盘</div>
+                <div class="right">11<i></i></div>
+            </div>
+        </div>
 
-            </ul>
+
+        <div class="center">
+            <div class="playTitle">
+                特色赛事<span style="visibility: hidden">13</span>
+            </div>
+            <div style="margin-bottom: 15px;">
+                <h2>英格兰超级联赛</h2>
+                <ul class="list">
+                    <li>
+                        <div class="ct">
+                            <span>切尔西</span>
+                            <span>爱华顿</span>
+                        </div>
+                        <div class="rt">
+                            <span>27/08</span>
+                            <i style="top:-25px; left:40px;"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <h2>西班牙甲组联赛</h2>
+                <ul class="list">
+                    <li>
+                        <div class="ct">
+                            <span>黄家苏斯达</span>
+                            <span>维拉利尔</span>
+                        </div>
+                        <div class="rt">
+                            <span>25/08</span>
+                            <i style="top:-25px; left:40px;"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <h2>德国甲组联赛</h2>
+                <ul class="list" style="border-bottom: none;">
+                    <li style="border-bottom: none;">
+                        <div class="ct">
+                            <span>科隆</span>
+                            <span>汉堡</span>
+                        </div>
+                        <div class="rt">
+                            <span>25/08</span>
+                            <i style="top:-25px; left:40px;"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
 
         </div>
 
